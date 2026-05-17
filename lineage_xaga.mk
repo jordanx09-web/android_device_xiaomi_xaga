@@ -36,3 +36,10 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildFingerprint=POCO/xaga_global/xaga:14/UP1A.231005.007/OS2.0.3.0.ULOMIXM:user/release-keys \
     DeviceProduct=$(PRODUCT_SYSTEM_NAME)
+    
+    
+#Dolby
+$(call inherit-product, hardware/dolby/dolby.mk)
+
+#Viper
+$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
