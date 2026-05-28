@@ -63,6 +63,13 @@ PRODUCT_PACKAGES += \
 # Shipping API Level
 PRODUCT_SHIPPING_API_LEVEL := 31
 
+# Axion Burst Engine Configs
+PRODUCT_COPY_FILES += \
+    device/xiaomi/xaga/configs/axion/ax_perf_boosts.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ax_perf_boosts.xml \
+    device/xiaomi/xaga/configs/axion/ax_perf_resources.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ax_perf_resources.xml \
+    device/xiaomi/xaga/configs/axion/ax_perf_thermal.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ax_perf_thermal.xml \
+    device/xiaomi/xaga/configs/axion/ax_perf_threads.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ax_perf_threads.xml
+
 # Sku properties
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/sku/properties/,$(TARGET_COPY_OUT_ODM)/etc)

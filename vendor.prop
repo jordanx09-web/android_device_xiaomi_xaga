@@ -35,3 +35,7 @@ persist.vendor.fingerprint.sensor_location=1080|960|200|local:462703942230018764
 
 # FM Radio
 ro.vendor.fm.platform=connac2x
+
+# ScrollOptimizer
+persist.sys.perf.scroll_opt=true
+persist.sys.perf.scroll_opt.heavy_app=2
